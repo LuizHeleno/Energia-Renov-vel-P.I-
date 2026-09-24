@@ -1,1 +1,1 @@
-O arquivo index é o site bruto com algumas modificações, ja os arquivos att1 e att2 são versões diferentes para teste, mas não necessariamente serão utilizadas para a apresentação.
+O arquivo index é o site bruto com algumas modificações, ja os arquivos att1 e att2 são versões diferentes para teste, a att1 é o principal arquivo para a apresentação e onde terá mais modificaçoes futuras.
