@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabarito - Meu Portal (Bootstrap 5)</title>
+
+  <!-- Bootstrap 5 (CSS via CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <!-- Baseado em: w3schools.com/bootstrap5/bootstrap_navbar.php -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">Meu Portal</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav">
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu</a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" data-bs-toggle="collapse" href="#demo1">Sobre</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="collapse" href="#demo2">Serviços</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="collapse" href="#demo3">Contato</a></li>
+            </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== BANNER (estilo "jumbotron") ===================== -->
+  <!-- Baseado em: w3schools.com/bootstrap5/bootstrap_jumbotron.php -->
+  <div class="mt-4 p-5 bg-primary text-white rounded"> 
+    <h1 style="text-align: center;">Bem-vindo ao Meu Portal</h1>
+    <p style="text-align: center;">Um pequeno portal de exemplo, construído apenas com Bootstrap 5.</p>
+  </div>
+
+
+  <!-- ===================== SEÇÃO DE CONTEÚDO (grid + cards) ===================== -->
+  <!-- Grid baseado em: w3schools.com/bootstrap5/bootstrap_grid_basic.php -->
+  <!-- Cards baseados em: w3schools.com/bootstrap5/bootstrap_cards.php -->
+  
+  <div class="container mt-5">
+    <div class="row">
+
+      <div class="col-sm-4 p-4 bg-white text-white">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Sobre Nós</h5>
+            <p class="card-text">Conheça um pouco mais da história e da missão do portal.</p>
+            <a href="#demo1" class="btn btn-primary" data-bs-toggle="collapse">Saiba mais</a>
+              <div id="demo1" class="collapse">
+                    Para saber mais <a href="https://www.google.com/" target="_blank">clique aqui!</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 p-4 bg-white text-white">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Nossos Serviços</h5>
+            <p class="card-text">Veja tudo o que oferecemos para nossos visitantes.</p>
+            <a href="#demo2" class="btn btn-primary" data-bs-toggle="collapse">Saiba mais</a>
+              <div id="demo2" class="collapse">
+                    Para saber mais <a href="https://www.youtube.com/" target="_blank">clique aqui!</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 p-4 bg-white text-white">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Fale Conosco</h5>
+            <p class="card-text">Entre em contato com a nossa equipe.</p>
+            <a href="#demo3" class="btn btn-primary" data-bs-toggle="collapse">Saiba mais</a>
+              <div id="demo3" class="collapse">
+                    Instagram do Luiz <a href="https://www.google.com/" target="_blank">clique aqui!</a> Instagram do Luiz Gustavo <a href="https://www.google.com/" target="_blank">clique aqui!</a> Instagram do Andre <a href="https://www.google.com/" target="_blank">clique aqui!</a> Instagram do Ícaro <a href="https://www.google.com/" target="_blank">clique aqui!</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <!-- <footer> é uma tag HTML padrão; a cor de fundo e o espaçamento usam -->
+  <!-- classes utilitárias do Bootstrap (Colors / Spacing), também vistas no tutorial -->
+  <footer class="bg-dark text-white text-center py-1 mt-2 fixed-bottom">
+  <p>Meu Portal © 2026</p>
+</footer>
+
+  <!-- Bootstrap JS (necessário para o botão de menu funcionar) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

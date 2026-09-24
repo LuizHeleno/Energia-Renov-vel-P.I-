@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Energia Renovável (entrega 1)</title>
+
+  <!-- Bootstrap 5 (CSS via CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <!-- Baseado em: w3schools.com/bootstrap5/bootstrap_navbar.php -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">Meu Portal</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav">
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu</a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.portal-energia.com/" target="_blank">Sobre</a></li>
+              <li><a class="dropdown-item" href="#demo2">Cartilha</a></li>
+              <li><a class="dropdown-item" href="https://linktr.ee/contatosenergsust" target="_blank">Contato</a></li>
+            </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ===================== BANNER (estilo "jumbotron") ===================== -->
+  <!-- Baseado em: w3schools.com/bootstrap5/bootstrap_jumbotron.php -->
+  <div class="mt-4 p-5 bg-warning text-dark rounded"> 
+    <h1 style="text-align: center; font-family: Courier New; font-weight: bold;">Energia renovável 🔋</h1>
+    <p style="text-align: center; font-family: Courier New; font-weight: bold; font-size: 22px;">Conheça a importância das energias renováveis para um futuro mais sustentável.</p>
+  </div>
+
+
+  <!-- ===================== SEÇÃO DE CONTEÚDO (grid + cards) ===================== -->
+  <!-- Grid baseado em: w3schools.com/bootstrap5/bootstrap_grid_basic.php -->
+  <!-- Cards baseados em: w3schools.com/bootstrap5/bootstrap_cards.php -->
+  
+  <div class="container mt-5">
+    <div class="row">
+
+      <div class="col-sm-4 p-4 bg-white text-white">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">☀️ Energia Solar</h5>
+            <p class="card-text"> A energia solar utiliza a luz do Sol para gerar eletricidade de forma limpa e sustentável.</p>
+            <a href="#demo1" class="btn btn-dark" data-bs-toggle="collapse">Saiba mais</a>
+              <div id="demo1" class="collapse mt-3">
+                  A energia solar é produzida a partir da luz e do calor emitidos pelo Sol. 
+                  Os painéis solares captam a radiação solar e podem transformá-la em energia elétrica para abastecer casas, 
+                  empresas e outros espaços. Por ser uma fonte renovável e abundante,
+                  a energia solar pode ajudar a reduzir a utilização de combustíveis fósseis e contribuir
+                  para uma produção de energia mais sustentável. 
+                  Além disso, os sistemas solares podem ser instalados em diferentes locais, como telhados e áreas abertas.
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 p-4 bg-white text-white">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">🌬️ Energia Eólica</h5>
+            <p class="card-text">A energia eólica aproveita a força dos ventos para produzir eletricidade sem a queima de combustíveis fósseis.</p>
+            <a href="#demo2" class="btn btn-dark" data-bs-toggle="collapse">Saiba mais</a>
+              <div id="demo2" class="collapse mt-3">
+                    A energia eólica é gerada aproveitando a força e o movimento dos ventos. 
+                    As turbinas eólicas possuem grandes hélices que giram com a ação do vento, movimentando um gerador responsável pela produção de eletricidade. 
+                    É uma fonte de energia renovável que não depende da queima direta de combustíveis para gerar eletricidade. 
+                    A energia eólica é especialmente aproveitada em regiões que apresentam ventos frequentes e com velocidade adequada para o funcionamento das turbinas.
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 p-4 bg-white text-white">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">🌱 Benefícios</h5>
+            <p class="card-text">As energias renováveis ajudam a reduzir impactos ambientais e contribuem para um futuro mais sustentável.</p>
+            <a href="#demo3" class="btn btn-dark" data-bs-toggle="collapse">Saiba mais</a>
+              <div id="demo3" class="collapse mt-3">
+                As energias renováveis utilizam recursos naturais que podem ser continuamente repostos, como a luz solar, os ventos e a água. 
+                Entre seus benefícios estão a redução da dependência de combustíveis fósseis, a diversificação das fontes de geração de eletricidade e a possibilidade 
+                de diminuir determinadas emissões de gases de efeito estufa. Além disso, o desenvolvimento dessas fontes pode estimular novas tecnologias, gerar empregos e 
+                contribuir para uma matriz energética mais diversificada e sustentável.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <!-- <footer> é uma tag HTML padrão; a cor de fundo e o espaçamento usam -->
+  <!-- classes utilitárias do Bootstrap (Colors / Spacing), também vistas no tutorial -->
+  <footer class="bg-dark text-white text-center py-1 mt-2 fixed-bottom">
+  <p>Meu Portal © 2026</p>
+</footer>
+
+  <!-- Bootstrap JS (necessário para o botão de menu funcionar) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
